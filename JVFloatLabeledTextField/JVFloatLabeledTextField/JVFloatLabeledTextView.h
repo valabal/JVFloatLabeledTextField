@@ -138,4 +138,6 @@ IB_DESIGNABLE
  */
 - (void)setPlaceholder:(NSString *)placeholder floatingTitle:(NSString *)floatingTitle;
 
+-(void)commonInit;
+
 @end

@@ -33,6 +33,8 @@
 		7FE3F0E41CB0598B00202683 /* JVFloatLabeledTextFieldXIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE3F0E21CB0598B00202683 /* JVFloatLabeledTextFieldXIBViewController.m */; };
 		7FE3F0E51CB0598B00202683 /* JVFloatLabeledTextFieldXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE3F0E31CB0598B00202683 /* JVFloatLabeledTextFieldXIBViewController.xib */; };
 		7FF4DB94180B865F008527BD /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF4DB93180B865F008527BD /* JVFloatLabeledTextField.m */; };
+		927142DE1DD0846000999195 /* MaterialDesignTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 927142DD1DD0846000999195 /* MaterialDesignTextField.m */; };
+		927142E11DD084B400999195 /* DottedShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 927142E01DD084B400999195 /* DottedShapeLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,10 @@
 		7FE3F0E31CB0598B00202683 /* JVFloatLabeledTextFieldXIBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JVFloatLabeledTextFieldXIBViewController.xib; sourceTree = "<group>"; };
 		7FF4DB92180B865F008527BD /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
 		7FF4DB93180B865F008527BD /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		927142DC1DD0846000999195 /* MaterialDesignTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaterialDesignTextField.h; path = JVFloatLabeledTextField/MaterialDesignTextField.h; sourceTree = "<group>"; };
+		927142DD1DD0846000999195 /* MaterialDesignTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaterialDesignTextField.m; path = JVFloatLabeledTextField/MaterialDesignTextField.m; sourceTree = "<group>"; };
+		927142DF1DD084B400999195 /* DottedShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DottedShapeLayer.h; path = JVFloatLabeledTextField/DottedShapeLayer.h; sourceTree = "<group>"; };
+		927142E01DD084B400999195 /* DottedShapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DottedShapeLayer.m; path = JVFloatLabeledTextField/DottedShapeLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +188,7 @@
 		7F50335F17FA7B0A0026FB7F /* JVFloatLabeledTextField */ = {
 			isa = PBXGroup;
 			children = (
+				927142DB1DD0840C00999195 /* MaterialDesign */,
 				7F50336817FA7B0A0026FB7F /* JVAppDelegate.h */,
 				7F50336917FA7B0A0026FB7F /* JVAppDelegate.m */,
 				7FF4DB91180B865F008527BD /* JVFloatLabeledTextField */,
@@ -229,6 +236,17 @@
 				4306C37319531E7000CC0A4C /* NSString+TextDirectionality.m */,
 			);
 			path = JVFloatLabeledTextField;
+			sourceTree = "<group>";
+		};
+		927142DB1DD0840C00999195 /* MaterialDesign */ = {
+			isa = PBXGroup;
+			children = (
+				927142DC1DD0846000999195 /* MaterialDesignTextField.h */,
+				927142DD1DD0846000999195 /* MaterialDesignTextField.m */,
+				927142DF1DD084B400999195 /* DottedShapeLayer.h */,
+				927142E01DD084B400999195 /* DottedShapeLayer.m */,
+			);
+			name = MaterialDesign;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,7 +416,9 @@
 				4306C37419531E7000CC0A4C /* NSString+TextDirectionality.m in Sources */,
 				7F50336A17FA7B0A0026FB7F /* JVAppDelegate.m in Sources */,
 				7F50336617FA7B0A0026FB7F /* main.m in Sources */,
+				927142E11DD084B400999195 /* DottedShapeLayer.m in Sources */,
 				7FE3F0E41CB0598B00202683 /* JVFloatLabeledTextFieldXIBViewController.m in Sources */,
+				927142DE1DD0846000999195 /* MaterialDesignTextField.m in Sources */,
 				7F9AB497183B2EBF00694AB0 /* JVFloatLabeledTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

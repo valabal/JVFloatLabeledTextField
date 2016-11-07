@@ -143,4 +143,7 @@ IB_DESIGNABLE
  */
 - (void)setAttributedPlaceholder:(NSAttributedString *)attributedPlaceholder floatingTitle:(NSString *)floatingTitle;
 
+-(void)commonInit;
+
+
 @end
