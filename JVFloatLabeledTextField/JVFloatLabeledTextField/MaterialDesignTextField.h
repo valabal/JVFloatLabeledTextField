@@ -6,8 +6,7 @@
 //  Copyright © 2016 Jared Verdi. All rights reserved.
 //
 
-#import <JVFloatLabeledText/JVFloatLabeledText.h>
-
+#import "JVFloatLabeledTextField.h"
 
 @class MaterialDesignTextField;
 
