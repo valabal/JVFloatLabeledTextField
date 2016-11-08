@@ -7,8 +7,11 @@
 //
 
 #import "JVFloatLabeledTextFieldXIBViewController.h"
+#import "MaterialDesignTextField.h"
 
 @interface JVFloatLabeledTextFieldXIBViewController ()
+
+@property(strong,nonatomic) IBOutlet MaterialDesignTextField *titleField;
 
 @end
 
@@ -16,7 +19,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    _titleField.validationBlock = ^{
+        if (_titleField.text.length == 0) {
+            _titleField.errorMessage = @"This field is required";
+            return FloatLabeledTextFieldStatusInvalid;
+        }
+        
+        return FloatLabeledTextFieldStatusValid;
+    };
+
 }
 
 - (void)didReceiveMemoryWarning {

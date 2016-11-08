@@ -28,6 +28,7 @@
 #import "JVFloatLabeledTextFieldViewController.h"
 #import "JVFloatLabeledTextField.h"
 #import "JVFloatLabeledTextView.h"
+#import "MaterialDesignTextField.h"
 
 const static CGFloat kJVFieldHeight = 44.0f;
 const static CGFloat kJVFieldHMargin = 10.0f;
@@ -64,7 +65,7 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
     
     UIColor *floatingLabelColor = [UIColor brownColor];
     
-    JVFloatLabeledTextField *titleField = [[JVFloatLabeledTextField alloc] initWithFrame:CGRectZero];
+    MaterialDesignTextField *titleField = [[MaterialDesignTextField alloc] initWithFrame:CGRectZero];
     titleField.font = [UIFont systemFontOfSize:kJVFieldFontSize];
     titleField.attributedPlaceholder =
     [[NSAttributedString alloc] initWithString:NSLocalizedString(@"Title", @"")
@@ -76,6 +77,17 @@ const static CGFloat kJVFieldFloatingLabelFontSize = 11.0f;
     titleField.translatesAutoresizingMaskIntoConstraints = NO;
     titleField.keepBaseline = YES;
 
+    
+    titleField.validationBlock = ^{
+        if (titleField.text.length == 0) {
+            titleField.errorMessage = @"This field is required";
+            return FloatLabeledTextFieldStatusInvalid;
+        }
+        
+        return FloatLabeledTextFieldStatusValid;
+    };
+    
+    
     UIView *div1 = [UIView new];
     div1.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3f];
     [self.view addSubview:div1];
